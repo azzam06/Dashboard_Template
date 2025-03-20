@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "open sans";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+
+/* #region Sidebar */
+.sidebar {
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
+}
+.sidebar > h3 {
+}
+.sidebar > h3::before {
+  content: "";
+}
+.sidebar > h3::after {
+  content: "";
+}
+/* #endregion Sidebar */

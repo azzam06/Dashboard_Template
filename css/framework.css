@@ -1,0 +1,65 @@
+/* #region Box */
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* #endregion Box */
+
+/* #region Padding + Margin */
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+/* #endregion Padding + Margin */
+
+/* #region Color */
+.bg-color {
+  background-color: white;
+}
+
+.c-black {
+  color: black;
+}
+
+/* #endregion Color */
+
+/* #region Position */
+.p-relative {
+  position: relative;
+}
+
+/* #endregion Position */
+
+/* #region Font */
+.txt-c {
+  text-align: center;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+/* #endregion Font */
+
+/* #region Border */
+.rad-6 {
+  border-radius: 6px;
+}
+
+/* #endregion Border */
