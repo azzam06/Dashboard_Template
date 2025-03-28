@@ -94,8 +94,16 @@
   padding-top: 15px;
 }
 
+.pb-10 {
+  padding-bottom: 10px;
+}
+
 .pb-15 {
   padding-bottom: 15px;
+}
+
+.pl-15 {
+  padding-left: 15px;
 }
 
 /* #endregion Padding*/
@@ -116,6 +124,10 @@
   border-radius: 10px;
 }
 
+.rad-half {
+  border-radius: 50%;
+}
+
 /* #endregion Border */
 /* #region Margin */
 .m-20 {
@@ -134,8 +146,28 @@
   margin-top: 10px;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 .mt-20 {
   margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mr-5 {
+  margin-right: 5px
+}
+
+.mr-10 {
+  margin-right: 10px
+}
+
+.mr-15 {
+  margin-right: 15px
 }
 
 .mb-5 {
@@ -171,6 +203,10 @@
 
 .bg-green {
   background-color: var(--green-color);
+}
+
+.bg-red {
+  background-color: var(--red-color);
 }
 
 .bg-orange {
@@ -223,6 +259,10 @@
   .txt-c-mobile {
     text-align: center;
   }
+}
+
+.fs-11 {
+  font-size: 11px;
 }
 
 .fs-14 {

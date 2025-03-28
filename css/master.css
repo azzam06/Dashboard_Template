@@ -30,7 +30,7 @@
 }
 
 body {
-  font-family: "open sans";
+  font-family: "open sans", sans-serif;
 }
 
 ul {
@@ -437,7 +437,7 @@ a {
   flex-grow: 1;
 }
 
-.tasks .done {
+.tasks .task-row.done .info {
   opacity: 0.3;
 }
 
@@ -457,7 +457,149 @@ a {
 
 /* #endregion Tasks */
 
+/* #region Latest Uploads */
+.latest-uploads ul li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
 
+.latest-uploads ul li span.size {
+  width: 100px;
+  text-align: center
+}
+
+/* #endregion Latest Uploads */
+
+/* #region Last Project */
+.last-project ul::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 11px;
+  background-color: var(--blue-color);
+}
+
+.last-project ul li::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  background-color: white;
+  z-index: 1;
+}
+
+.last-project ul li.done::before {
+  background-color: var(--blue-color);
+}
+
+.last-project ul li.current::before {
+  animation: change-color 0.8s infinite alternate;
+}
+
+.last-project img.lunch-project {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  opacity: 0.3;
+}
+
+/* #endregion Last Project */
+
+/* #region Reminders */
+.reminders ul li .key {
+  width: 15px;
+  height: 15px;
+}
+
+.reminders ul li>div.red {
+  border-left: 2px solid var(--red-color);
+}
+
+.reminders ul li>div.green {
+  border-left: 2px solid var(--green-color);
+}
+
+.reminders ul li>div.blue {
+  border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li>div.orange {
+  border-left: 2px solid var(--orange-color);
+}
+
+.reminders .info {
+  flex-grow: 1;
+}
+
+/* #endregion Reminders */
+
+/* #region Latest Post */
+.latest-post .info .about {
+  margin-left: 25px;
+}
+
+.latest-post .title {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 30px 15px;
+  margin: 20px;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+@media(max-width:767px) {
+  .latest-post .info .about {
+    margin-left: 15px;
+  }
+
+  .latest-post .title {
+    padding: 20px 10px;
+    margin: 15px;
+    line-height: normal;
+    font-size: 16px;
+  }
+}
+
+.latest-post .rate .comment span,
+.latest-post .rate .like span,
+.latest-post .rate .comment i,
+.latest-post .rate .like i {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.latest-post .rate .comment:hover span,
+.latest-post .rate .like:hover span {
+  color: black;
+}
+
+.latest-post .rate .comment:hover i {
+  color: var(--blue-color);
+}
+
+.latest-post .rate .like:hover i {
+  color: var(--red-color);
+}
+
+/* #endregion Latest Post */
 
 /* #endregion Wrapper */
 /* #endregion Content */
+
+/* #region Animations */
+
+@keyframes change-color {
+  from {
+    background-color: white;
+  }
+
+  to {
+    background-color: var(--blue-color);
+  }
+}
+
+/* #endregion Animations */
