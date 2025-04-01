@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dashboard</title>
+    <!-- css font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- css framework -->
     <link rel="stylesheet" href="css/framework.css">
     <!-- css main -->
     <link rel="stylesheet" href="css/master.css">
-    <!-- css font awesome -->
-    <link rel="stylesheet" href="css/all.min.css">
     <!-- ! Google Font(open sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,13 +77,12 @@
         </div>
         <!-- #endregion Sidebar -->
 
-        <!-- #region Content -->
         <div class="content w-full">
 
             <!-- #region Head -->
             <div class="head bg-white p-15 between-flex">
                 <div class="search p-relative">
-                    <input class="p-10 rad-10 solid1-ccc" type="search" placeholder="Type A Keyword">
+                    <input class="p-10 rad-10 border-ccc" type="search" placeholder="Type A Keyword">
                 </div>
                 <div class="icons d-flex align-center">
                     <span class="notification p-relative cursor-pointer">
@@ -185,26 +184,26 @@
                 <!-- #endregion Targets -->
 
                 <!-- #region Ticket widget -->
-                <div class="tickets main-boxs">
+                <div class="tickets main-box">
                     <h2 class="mb-10">Tickets Statistics</h2>
                     <p class="main-paragraph">Everything About Support Tickets</p>
                     <div class="d-flex txt-c gap-20 f-wrap">
-                        <div class="box p-20 solid1-ccc rad-10 fs-14 c-gray">
+                        <div class="box p-20 border-ccc rad-10 fs-14 c-gray">
                             <i class="fa-solid fa-rectangle-list fa-2x mb-10 c-orange"></i>
                             <span class="d-block c-black fs-25 fw-bold mb-5">3000</span>
                             Total
                         </div>
-                        <div class="box p-20 solid1-ccc rad-10 fs-14 c-gray">
+                        <div class="box p-20 border-ccc rad-10 fs-14 c-gray">
                             <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
                             <span class="d-block c-black fs-25 fw-bold mb-5">500</span>
                             Pinding
                         </div>
-                        <div class="box p-20 solid1-ccc rad-10 fs-14 c-gray">
+                        <div class="box p-20 border-ccc rad-10 fs-14 c-gray">
                             <i class="fa-solid fa-circle-check fa-2x mb-10 c-green"></i>
                             <span class="d-block c-black fs-25 fw-bold mb-5">1900</span>
                             Closed
                         </div>
-                        <div class="box p-20 solid1-ccc rad-10 fs-14 c-gray">
+                        <div class="box p-20 border-ccc rad-10 fs-14 c-gray">
                             <i class="fa-solid fa-rectangle-xmark fa-2x mb-10 c-red"></i>
                             <span class="d-block c-black fs-25 fw-bold mb-5">3000</span>
                             Deleted
@@ -214,7 +213,7 @@
                 <!-- #endregion Ticket widget -->
 
                 <!-- #region Latest News -->
-                <div class="latest-news main-boxs txt-c-mobile">
+                <div class="latest-news main-box txt-c-mobile">
                     <h2 class="mb-20">Latest News</h2>
                     <div class="lists">
                         <div class="news-row d-flex align-center">
@@ -254,7 +253,7 @@
                 <!-- #endregion Latest News -->
 
                 <!-- #region Tasks -->
-                <div class="tasks main-boxs">
+                <div class="tasks main-box">
                     <h2 class="mb-20">Latest Tasks</h2>
                     <div class="task-row between-flex">
                         <div class="info">
@@ -295,7 +294,7 @@
                 <!-- #endregion Tasks -->
 
                 <!-- #region Top Search -->
-                <div class="search-items main-boxs">
+                <div class="search-items main-box">
                     <h2 class="mb-20">Top Search Items</h2>
                     <div class="items-head between-flex c-gray mb-10">
                         <span>Keyword</span>
@@ -329,7 +328,7 @@
                 <!-- #endregion Top Search -->
 
                 <!-- #region Latest Uploads -->
-                <div class="latest-uploads main-boxs">
+                <div class="latest-uploads main-box">
                     <h2 class="mb-20">Latest Uploads</h2>
                     <ul>
                         <li class="between-flex pb-10 mb-10">
@@ -407,7 +406,7 @@
                 <!-- #endregion Latest Uploads -->
 
                 <!-- #region Last Project -->
-                <div class="last-project main-boxs p-relative">
+                <div class="last-project main-box p-relative">
                     <h2 class="mb-20">Last Project Progress</h2>
                     <ul class="p-relative">
                         <li class="d-flex align-center mt-25 done">Got The Project</li>
@@ -421,7 +420,7 @@
                 <!-- #endregion Last Project -->
 
                 <!-- #region Reminders -->
-                <div class="reminders main-boxs p-relative">
+                <div class="reminders main-box p-relative">
                     <h2 class="mb-20">Reminders</h2>
                     <ul class="p-relative">
                         <li class="d-flex align-center mt-15">
@@ -457,21 +456,21 @@
                 <!-- #endregion Reminders -->
 
                 <!-- #region Latest Post -->
-                <div class="latest-post main-boxs">
+                <div class="latest-post main-box">
                     <h2 class="mb-20">Latest Post</h2>
                     <div class="info d-flex">
                         <img class="img-w-50" src="assets/imgs/avatar.png" alt="avatar">
                         <div class="about">
-                            <h3 class="mb-5">Ahmed Azzam</h3>
+                            <h3 class="mb-5 fs-18">Ahmed Azzam</h3>
                             <p class="c-gray fs-14">About 3 Hours Ago</p>
                         </div>
                     </div>
-                    <div class="title">
+                    <div class="post">
                         You can fool all of the people some of the time, and some of the people all of
                         the time, but you can't fool all of the
                         people all of the time.
                     </div>
-                    <div class="rate between-flex mt-20">
+                    <div class="stats between-flex mt-20">
                         <div class="comment c-gray fs-16">
                             <i class="fa-regular fa-comments"></i>
                             <span>11k</span>
@@ -483,11 +482,143 @@
                     </div>
                 </div>
                 <!-- #endregion Latest Post -->
+
+                <!-- #region Social Media Stats -->
+                <div class="social-media main-box">
+                    <h2 class="mb-20">Social Media Stats</h2>
+                    <div class="box facebook mb-10 p-relative between-flex">
+                        <i class="fa-brands fa-facebook-f fa-2x c-white h-full center-flex"></i>
+                        <span>2M Like</span>
+                        <a class="fs-14 c-white btn-shape" href="#">Like</a>
+                    </div>
+                    <div class="box linkedin mb-10 p-relative between-flex">
+                        <i class="fa-brands fa-linkedin-in fa-2x c-white h-full center-flex"></i>
+                        <span>100k Follow</span>
+                        <a class="fs-14 c-white btn-shape" href="#">Follow</a>
+                    </div>
+                    <div class="box x mb-10 p-relative between-flex">
+                        <i class="fa-brands fa-x-twitter fa-2x c-white h-full center-flex"></i>
+                        <span>20k Follow</span>
+                        <a class="fs-14 c-white btn-shape" href="#">Follow</a>
+                    </div>
+                    <div class="box youtube mb-10 p-relative between-flex">
+                        <i class="fa-brands fa-youtube fa-2x c-white h-full center-flex"></i>
+                        <span>210k Follow</span>
+                        <a class="fs-14 c-white btn-shape" href="#">Subscribe</a>
+                    </div>
+                </div>
+                <!-- #endregion Social Media Stats -->
             </div>
             <!-- #endregion Wrapper -->
 
+            <!-- #region Projects Table -->
+            <div class="projects-table main-box">
+                <h2 class="mb-20">Projects</h2>
+                <div class="responsive-table">
+                    <table class="w-full">
+                        <thead class="fs-18">
+                            <tr>
+                                <th>Name</th>
+                                <th>Finish Date</th>
+                                <th>Client</th>
+                                <th>Price</th>
+                                <th>Team</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="fs-16">
+                            <tr>
+                                <td>Ministry Wikipedia</td>
+                                <td>10 Mar 2025</td>
+                                <td>Ministry</td>
+                                <td>$7000</td>
+                                <td>
+                                    <img src="assets/imgs/team-01.png" alt="team">
+                                    <img src="assets/imgs/team-02.png" alt="team">
+                                    <img src="assets/imgs/team-03.png" alt="team">
+                                    <img src="assets/imgs/team-04.png" alt="team">
+                                    <img src="assets/imgs/team-05.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="btn-shape c-white bg-orange fs-11">Pinding</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tecno Shop</td>
+                                <td>10 Janu 2025</td>
+                                <td>Azzam Company</td>
+                                <td>$2600</td>
+                                <td>
+                                    <img src="assets/imgs/team-03.png" alt="team">
+                                    <img src="assets/imgs/team-01.png" alt="team">
+                                    <img src="assets/imgs/team-02.png" alt="team">
+                                    <img src="assets/imgs/team-04.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="btn-shape c-white bg-blue fs-11">In Progress</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bouba App</td>
+                                <td>05 Sep 2024</td>
+                                <td>Bouba</td>
+                                <td>$900</td>
+                                <td>
+                                    <img src="assets/imgs/team-04.png" alt="team">
+                                    <img src="assets/imgs/team-01.png" alt="team">
+                                    <img src="assets/imgs/team-03.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="btn-shape c-white bg-green fs-11">Completed</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mahmoud Website</td>
+                                <td>09 May 2024</td>
+                                <td>Mahmoud Elsaid</td>
+                                <td>$600</td>
+                                <td>
+                                    <img src="assets/imgs/team-01.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="btn-shape c-white bg-green fs-11">Completed</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Food Shop</td>
+                                <td>15 Nov 2024</td>
+                                <td>Mohmmed allam,<br>Yara Mostafa</td>
+                                <td>$4000</td>
+                                <td>
+                                    <img src="assets/imgs/team-03.png" alt="team">
+                                    <img src="assets/imgs/team-04.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="btn-shape c-white bg-red fs-11">Rejected</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Arena Application</td>
+                                <td>01 Mar 2024</td>
+                                <td>Arena Application</td>
+                                <td>$2000</td>
+                                <td>
+                                    <img src="assets/imgs/team-04.png" alt="team">
+                                    <img src="assets/imgs/team-03.png" alt="team">
+                                    <img src="assets/imgs/team-02.png" alt="team">
+                                    <img src="assets/imgs/team-01.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="btn-shape c-white bg-green fs-11">Completed</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- #endregion Projects Table -->
+
         </div>
-        <!-- #endregion Content -->
     </div>
 </body>
 

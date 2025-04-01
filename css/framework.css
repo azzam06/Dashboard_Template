@@ -67,6 +67,10 @@
   width: 100%;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .img-w-50 {
   width: 50px;
 }
@@ -112,8 +116,12 @@
   border: none;
 }
 
-.solid1-ccc {
+.border-ccc {
   border: 1px solid #ccc;
+}
+
+.border-eee {
+  border: 1px solid #eee;
 }
 
 .rad-6 {
@@ -180,6 +188,22 @@
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
 }
 
 /* #endregion Margin */
@@ -279,6 +303,10 @@
 
 .fs-25 {
   font-size: 25px;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 .fw-bold {

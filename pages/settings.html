@@ -4,11 +4,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Dashboard</title>
+  <!-- css font awesome -->
+  <link rel="stylesheet" href="../css/all.min.css">
+  <!-- css framework -->
+  <link rel="stylesheet" href="../css/framework.css">
+  <!-- css main -->
+  <link rel="stylesheet" href="../css/master.css">
+  <!-- ! Google Font(open sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <h1>Settings</h1>
+  <div class="page d-flex">
+
+    <!-- #region Sidebar -->
+    <div class="sidebar bg-white p-20 p-relative">
+      <h3 class="p-relative txt-c mt-0">Azzam</h3>
+      <ul>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="../index.html">
+            <i class="far fa-chart-bar fa-fw"></i>
+            <span class="hide-mobile">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+            <i class="fas fa-cogs fa-fw"></i>
+            <span class="hide-mobile">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+            <i class="fas fa-user fa-fw"></i>
+            <span class="hide-mobile">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+            <i class="fas fa-project-diagram fa-fw"></i>
+            <span class="hide-mobile">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="hide-mobile">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+            <i class="far fa-user-circle"></i>
+            <span class="hide-mobile">Friends</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+            <i class="far fa-file-alt"></i>
+            <span class="hide-mobile">Files</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+            <i class="fas fa-money-check-alt"></i>
+            <span class="hide-mobile">Plans</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion Sidebar -->
+
+    <div class="content w-full">
+
+      <!-- #region Head -->
+      <div class="head bg-white p-15 between-flex">
+        <div class="search p-relative">
+          <input class="p-10 rad-10 border-ccc" type="search" placeholder="Type A Keyword">
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative cursor-pointer">
+            <i class="fas fa-bell fa-lg"></i>
+          </span>
+          <a class="cursor-pointer" href="pages/profile.html">
+            <img src="../assets/imgs/avatar.png" alt="avatar">
+          </a>
+        </div>
+      </div>
+      <!-- #endregion Head -->
+
+      <h1 class="p-relative">Settings</h1>
+
+      <div class="settings-page d-grid gap-20">
+
+        <!-- #region Site Control -->
+        <div class="site-control main-box">
+          <h2 class="fw-600 mb-5">Site Control</h2>
+          <p class="mb-20 c-gray fs-16">Control The Website If There Is Maintenance</p>
+          <div class="between-flex bg-eee p-10 rad-6">
+            <div>
+              <span class="fs-16 fw-bold mb-5">Website Control</span>
+            </div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox">
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+          <p class="fs-14 c-gray mt-5 mb-20 ml-10">Open/Close Website And Type The Reason</p>
+          <textarea class="close-msg bg-eee border-ccc" placeholder="Close Message Content..."></textarea>
+        </div>
+        <!-- #endregion Site Control -->
+
+        <!-- #region General Info -->
+        <div class="general-info main-box">
+          <h2 class="fw-600 mb-5">General Info</h2>
+          <p class="mb-20 c-gray">General Information About Your Account</p>
+          <div class="mb-15">
+            <label class="d-block fs-14 c-gray mb-5">First Name</label>
+            <input class="bg-eee border-ccc rad-6 p-10 mb-10 w-full" type="text" name="" id="first"
+              placeholder="First Name">
+          </div>
+          <div class="mb-15">
+            <label class="d-block fs-14 c-gray mb-5">Last Name</label>
+            <input class="bg-eee border-ccc rad-6 p-10 mb-10 w-full" type="text" name="" id="last"
+              placeholder="Last Name">
+          </div>
+          <div class="">
+            <label class="d-block fs-14 c-gray mb-5">Email</label>
+            <input class="email bg-eee border-ccc rad-6 p-10 mb-10 w-full" type="text" name="" id="email"
+              value="em@.com" disabled>
+            <a class="c-blue ml-10" href="#">Change</a>
+          </div>
+        </div>
+        <!-- #endregion General Info -->
+
+        <!-- #region Security Info-->
+        <div class="security-info main-box">
+          <h2 class="fw-600 mb-5">Security Info</h2>
+          <p class="c-gray mb-20">Security Information About Your Account</p>
+          <div class="between-flex p-15">
+            <div class="info">
+              <h4 class="fw-600 mb-5 mt-5">Password</h4>
+              <p class="c-gray fs-14 mb-10">Last Change On 25/10/2021</p>
+            </div>
+            <span class="btn-shape bg-blue c-white">Change</span>
+          </div>
+          <div class="between-flex p-15">
+            <div class="info">
+              <h4 class="fw-600 mb-5 mt-5">Two-Factor Authentication</h4>
+              <p class="c-gray fs-14 mb-10">Enable/Disable The Feature</p>
+            </div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox" name="" id="">
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+          <div class="between-flex p-15">
+            <div class="info">
+              <h4 class="fw-600 mb-5 mt-5">Devices</h4>
+              <p class="c-gray fs-14 mb-10">Check The Login Devices List</p>
+            </div>
+            <span class="btn-shape bg-eee">Change</span>
+          </div>
+        </div>
+        <!-- #endregion Security Info-->
+
+        <!-- #region Social Info -->
+        <div class="social-info main-box">
+          <h2 class="mb-5 fw-600">Social Info</h2>
+          <p class="c-gray mb-20">Social Media Information</p>
+          <div class="d-flex align-center mb-20">
+            <i class="fa-brands fa-facebook c-gray center-flex"></i>
+            <input class="w-full" type="text" name="" id="" placeholder="Facebook Username">
+          </div>
+          <div class="d-flex align-center mb-20">
+            <i class="fa-brands fa-linkedin-in c-gray center-flex"></i>
+            <input class="w-full" type="text" name="" id="" placeholder="Linkedin Username">
+          </div>
+          <div class="d-flex align-center mb-20">
+            <i class="fa-brands fa-x-twitter c-gray center-flex"></i>
+            <input class="w-full" type="text" name="" id="" placeholder="X Username">
+          </div>
+          <div class="d-flex align-center mb-20">
+            <i class="fa-brands fa-youtube c-gray center-flex"></i>
+            <input class="w-full" type="text" name="" id="" placeholder="Youtube Username">
+          </div>
+        </div>
+        <!-- #endregion Social Info -->
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>
