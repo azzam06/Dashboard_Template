@@ -1,5 +1,5 @@
 /* #region Module */
-@import url('basic.module.css');
+@import url("basic.module.css");
 /* #endregion Module */
 
 /* #region Variables */
@@ -121,6 +121,8 @@ a {
 
 .sidebar ul li i {
   font-size: 18px;
+  width: 25px;
+  text-align: center;
 }
 
 .sidebar ul li span {
@@ -398,7 +400,7 @@ a {
   width: calc(50% - 10px);
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .tickets .box {
     width: 100%;
   }
@@ -413,7 +415,7 @@ a {
   border-bottom: 1px solid #eee;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .latest-news .news-row {
     flex-direction: column;
     gap: 20px;
@@ -468,14 +470,14 @@ a {
 
 .latest-uploads ul li span.size {
   width: 100px;
-  text-align: center
+  text-align: center;
 }
 
 /* #endregion Latest Uploads */
 
 /* #region Last Project */
 .last-project ul::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 100%;
@@ -484,7 +486,7 @@ a {
 }
 
 .last-project ul li::before {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   margin-right: 15px;
@@ -557,7 +559,7 @@ a {
   min-height: 140px;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .latest-post .info .about {
     margin-left: 15px;
   }
@@ -595,7 +597,7 @@ a {
 
 /* #region Social Media Stats */
 .social-media .box {
-  padding: 15px 15px 15px 70px
+  padding: 15px 15px 15px 70px;
 }
 
 .social-media .box i {
@@ -607,7 +609,7 @@ a {
 }
 
 .social-media .box i:hover {
-  transform: rotate(5deg)
+  transform: rotate(5deg);
 }
 
 .social-media .box a {
@@ -689,7 +691,7 @@ a {
 .projects-table table tbody td {
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
-  transition: var(--transition)
+  transition: var(--transition);
 }
 
 .projects-table table tbody td:last-child {
@@ -714,8 +716,8 @@ a {
 
 /* #endregoin Projects Table */
 
-
 /* #endregion Wrapper */
+
 /* #endregion >>>>>Dashboard<<<<< */
 
 /* #region>>>>>Settings<<<<< */
@@ -730,7 +732,7 @@ a {
   cursor: no-drop;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .settings-page {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     margin: 0 10px 10px 10px;
@@ -745,7 +747,6 @@ a {
 }
 
 /* #endregion General Info */
-
 
 /* #region Security Info */
 .security-info div:not(:last-of-type) {
@@ -793,9 +794,234 @@ a {
 
 /* #endregion Social Info */
 
+/* #region Widgets Control */
+.widgets-control .controls input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.widgets-control .controls label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.widgets-control .controls label::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: white;
+  border: 2px solid var(--gray-color);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.widgets-control .controls label:hover {
+  transform: scale(1.1);
+}
+
+.widgets-control .controls label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+
+.widgets-control .controls label::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c";
+  position: absolute;
+  background-color: var(--blue-color);
+  color: white;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+}
+
+.widgets-control .controls input[type="checkbox"]:checked+label::after {
+  transform: scale(1);
+}
+
+/* #endregion Widgets Control */
+
+/* #region Backup Manager */
+.backup-manager input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.backup-manager .time label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.backup-manager .time label::before {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--gray-color);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.backup-manager .time label::after {
+  content: "";
+  position: absolute;
+  background-color: var(--blue-color);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: scale(0) translate(27%, -50%);
+}
+
+.backup-manager .time input[type="radio"]:hover+label::before {
+  border-color: var(--blue-color);
+}
+
+.backup-manager .time input[type="radio"]:checked+label::after {
+  transform: scale(1) translate(27%, -50%);
+}
+
+.backup-manager .servers {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .backup-manager .servers {
+    padding-top: 10px;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+}
+
+.backup-manager .servers .server {
+  border: 2px solid #eee;
+  position: relative;
+}
+
+.backup-manager .servers .server label {
+  cursor: pointer;
+}
+
+.backup-manager .servers input[type="radio"]:checked+.server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+
+/* #endregion Backup Manager */
+
 /* #endregion>>>>>Settings<<<<< */
 
+/* #region>>>>>Profile<<<<< */
+/* .profile-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin: 0 20px 20px 20px;
+}
 
+@media(max-width:767px) {
+  .profile-page {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin: 0 10px 10px 10px;
+  }
+} */
+
+/* #region Overview */
+@media(max-width:767px) {
+  .overview {
+    flex-direction: column;
+  }
+
+  .overview .info-box div label {
+    justify-content: flex-end;
+    margin-right: 42px;
+  }
+}
+
+.overview .avatar-box {
+  width: 300px;
+}
+
+@media(min-width:768px) {
+  .overview .avatar-box {
+    border-right: 1px solid #eee
+  }
+}
+
+.overview .avatar-box>img {
+  width: 120px;
+  height: 120px;
+}
+
+.overview .avatar-box div.level {
+  width: 70%;
+  height: 6px;
+  margin: 15px auto;
+  /* overflow: hidden; */
+}
+
+.overview .avatar-box div.level span {
+  position: absolute;
+  width: 50%;
+  height: 6px;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  background-color: var(--blue-color);
+}
+
+.overview .info-box .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.overview .info-box .box:last-of-type {
+  border: none;
+}
+
+.overview .info-box .box:hover {
+  background-color: #f9f9f9;
+}
+
+.overview .info-box .box>div {
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+
+/* #endregion Overview */
+/* ! */
+.profile-page .under-box {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  margin: 20px auto;
+}
+
+@media(max-width:767px) {
+  .profile-page .under-box {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px auto;
+  }
+}
 
 /* #region --Toggle-- */
 label {
@@ -820,9 +1046,9 @@ label {
 
 .toggle-switch::before,
 .toggle-checkbox:checked+.toggle-switch::before {
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  content: '\f111';
+  content: "\f111";
   position: absolute;
   background-color: transparent;
   color: white;

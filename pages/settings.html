@@ -108,7 +108,7 @@
               <span class="fs-16 fw-bold mb-5">Website Control</span>
             </div>
             <label>
-              <input class="toggle-checkbox" type="checkbox">
+              <input checked class="toggle-checkbox" type="checkbox">
               <div class="toggle-switch"></div>
             </label>
           </div>
@@ -193,8 +193,80 @@
           </div>
         </div>
         <!-- #endregion Social Info -->
-      </div>
 
+        <!-- #region Widgets Control  -->
+        <div class="widgets-control main-box">
+          <h2 class="mb-5 fw-600">Widgets Control</h2>
+          <p class="c-gray mb-20">Show/Hide Widgets</p>
+          <div class="controls d-flex align-center mb-15">
+            <input type="checkbox" name="" checked id="one">
+            <label for="one">Quick Draft</label>
+          </div>
+          <div class="controls d-flex align-center mb-15">
+            <input type="checkbox" name="" checked id="two">
+            <label for="two">Yearly Targets</label>
+          </div>
+          <div class="controls d-flex align-center mb-15">
+            <input type="checkbox" name="" checked id="three">
+            <label for="three">Tickets Statistics</label>
+          </div>
+          <div class="controls d-flex align-center mb-15">
+            <input type="checkbox" name="" id="four">
+            <label for="four">Latest News</label>
+          </div>
+          <div class="controls d-flex align-center mb-15">
+            <input type="checkbox" name="" checked id="five">
+            <label for="five">Latest Tasks</label>
+          </div>
+          <div class="controls d-flex align-center mb-15">
+            <input type="checkbox" name="" checked id="six">
+            <label for="six">Top Search Items</label>
+          </div>
+        </div>
+        <!-- #endregion Widgets Control  -->
+
+        <!-- #region Backup Manager -->
+        <div class="backup-manager main-box">
+          <h2 class="mb-5 fw-600">Backup Manager</h2>
+          <p class="c-gray mb-20">Control Backup Time And Location</p>
+          <div class="time d-flex align-center mb-15">
+            <input type="radio" name="time" id="daily">
+            <label for="daily">Daily</label>
+          </div>
+          <div class="time d-flex align-center mb-15">
+            <input type="radio" name="time" id="weekly" checked>
+            <label for="weekly">Weekly</label>
+          </div>
+          <div class="time d-flex align-center mb-15">
+            <input type="radio" name="time" id="monthly">
+            <label for="monthly">Monthly</label>
+          </div>
+          <div class="servers d-flex align-center txt-c">
+            <input type="radio" name="servers" id="server-one" checked>
+            <div class="server mb-15 rad-10 w-full">
+              <label class="d-block m-15" for="server-one">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                MegaMan
+              </label>
+            </div>
+            <input type="radio" name="servers" id="server-two">
+            <div class="server mb-15 rad-10 w-full">
+              <label class="d-block m-15" for="server-two">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                Sigma
+              </label>
+            </div>
+            <input type="radio" name="servers" id="server-three">
+            <div class="server mb-15 rad-10 w-full">
+              <label class="d-block m-15" for="server-three">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                Oracle
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- #endregion Backup Manager -->
+      </div>
     </div>
   </div>
 </body>
