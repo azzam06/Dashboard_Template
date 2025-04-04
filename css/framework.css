@@ -102,8 +102,16 @@
   padding: 20px;
 }
 
+.pt-10 {
+  padding-top: 10px;
+}
+
 .pt-15 {
   padding-top: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
 }
 
 .pb-10 {
@@ -112,6 +120,14 @@
 
 .pb-15 {
   padding-bottom: 15px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pl-10 {
+  padding-left: 10px;
 }
 
 .pl-15 {
@@ -146,6 +162,10 @@
 
 /* #endregion Border */
 /* #region Margin */
+.m-10 {
+  margin: 10px;
+}
+
 .m-15 {
   margin: 15px;
 }
@@ -229,13 +249,18 @@
   background-color: white;
 }
 
+.bg-eee {
+  background-color: #eee;
+}
+
 .bg-ccc {
   background-color: #ccc;
 }
 
-.bg-eee {
-  background-color: #eee;
+.bg-gray {
+  background-color: var(--gray-color);
 }
+
 
 .bg-blue {
   background-color: var(--blue-color);

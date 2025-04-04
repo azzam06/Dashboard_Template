@@ -1,6 +1,9 @@
-/* #region Module */
+/* ! Module */
 @import url("basic.module.css");
-/* #endregion Module */
+
+/* ! Google Font(open sans) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 /* #region Variables */
 :root {
@@ -31,7 +34,8 @@
 }
 
 body {
-  font-family: "open sans", sans-serif;
+  font-family: "open sans"
+    /* , sans-serif; */
 }
 
 ul {
@@ -932,17 +936,6 @@ a {
 /* #endregion>>>>>Settings<<<<< */
 
 /* #region>>>>>Profile<<<<< */
-/* .profile-page {
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  margin: 0 20px 20px 20px;
-}
-
-@media(max-width:767px) {
-  .profile-page {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    margin: 0 10px 10px 10px;
-  }
-} */
 
 /* #region Overview */
 @media(max-width:767px) {
@@ -1022,6 +1015,210 @@ a {
     margin: 20px auto;
   }
 }
+
+/* #region My Skills */
+.under-box .my-skills div:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.under-box .my-skills div span {
+  transition: var(--transition);
+}
+
+.under-box .my-skills div span:hover {
+  background-color: var(--gray-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* #endregion My Skills */
+
+/* #region Latest Activities */
+.under-box .activities .activity img {
+  width: 70px;
+  transition: var(--transition);
+}
+
+.under-box .activities .activity:hover img {
+  transform: scale(1.1);
+}
+
+.under-box .activities .activity {
+  padding: 30px 0;
+}
+
+.under-box .activities .activity:not(:last-of-type) {
+  border-bottom: 2px solid #eee;
+}
+
+.under-box .activities .activity div.date {
+  margin-left: auto;
+  text-align: end;
+}
+
+/* #endregion Latest Activities */
+
+/* #endregion>>>>>Profile<<<<< */
+
+
+/* #region>>>>>Projects<<<<< */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.projects-page .project>span {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+}
+
+.projects-page .project>h4 {
+  font-weight: 500;
+}
+
+.projects-page .team {
+  position: relative;
+  min-height: 80px;
+  border-bottom: 2px solid #eee;
+}
+
+.projects-page .team>a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.projects-page .team>a:nth-child(2) {
+  left: 25px;
+}
+
+.projects-page .team>a:nth-child(3) {
+  left: 50px;
+}
+
+.projects-page .team>a:nth-child(4) {
+  left: 75px;
+}
+
+.projects-page .team>a:hover {
+  transform: scale(1.2);
+  z-index: 2;
+
+}
+
+.projects-page .team>a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.projects-page .do {
+  padding-top: 15px;
+  justify-content: flex-end;
+}
+
+.projects-page .do span {
+  transition: 0.3s;
+}
+
+.projects-page .do span:hover {
+  transform: scale(1.1);
+}
+
+.projects-page .info {
+  border-top: 2px solid #eee;
+  margin-top: 15px;
+  padding-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-page .info .level {
+  position: relative;
+  width: 260px;
+  height: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.projects-page .info .level span {
+  position: absolute;
+  height: 8px;
+}
+
+.projects-page .info .level.one span {
+  background-color: var(--red-color);
+  width: 30%;
+}
+
+.projects-page .info .level.two span {
+  background-color: var(--red-alt-color);
+  width: 40%;
+}
+
+.projects-page .info .level.three span {
+  background-color: var(--orange-color);
+  width: 50%;
+}
+
+.projects-page .info .level.four span {
+  background-color: var(--orange-alt-color);
+  width: 70%;
+}
+
+.projects-page .info .level.five span {
+  background-color: var(--green-color);
+  width: 90%;
+}
+
+.projects-page .info .level.six span {
+  background-color: var(--green-alt-color);
+  width: 100%;
+}
+
+.projects-page .info .level.seven span {
+  background-color: var(--red-color);
+  width: 10%;
+}
+
+@media(max-width:767px) {
+  .projects-page {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .projects-page .project>span {
+    top: 2%;
+    right: 3%;
+  }
+
+  .projects-page .project h4 {
+    margin-top: 20px;
+  }
+
+  .projects-page .project h4,
+  .projects-page .project p {
+    text-align: center;
+  }
+
+  .projects-page .project .do {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+  }
+
+  .projects-page .project .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* #endregion>>>>>Projects<<<<< */
+
 
 /* #region --Toggle-- */
 label {
