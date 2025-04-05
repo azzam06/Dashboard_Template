@@ -740,7 +740,7 @@ a {
 
 @media (max-width: 767px) {
   .settings-page {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
     margin: 0 10px 10px 10px;
     gap: 10px;
   }
