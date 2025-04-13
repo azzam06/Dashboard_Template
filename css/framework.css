@@ -214,6 +214,10 @@
   margin-right: 15px;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -228,6 +232,10 @@
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .ml-5 {
@@ -356,6 +364,10 @@
 
 .fs-25 {
   font-size: 25px;
+}
+
+.fs-30 {
+  font-size: 30px;
 }
 
 .fw-600 {
